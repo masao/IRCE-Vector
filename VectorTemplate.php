@@ -88,13 +88,30 @@ class VectorTemplate extends BaseTemplate {
 				array_reverse( $this->data['personal_urls'] );
 		}
 		// Output HTML Page
-		$this->html( 'headelement' );
+		//$this->html( 'headelement' );
 		?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="../../ircepedia/style.css" type="text/css">
+<title>
+</title>
+</head>
+<body>
+<form action="../../ircepedia/" method="GET">
+<div class="form">
+<span class="logo"><img src="../../ircepedia/logo-small.png" alt="百科事典サーチ" /></span>
+<input type="text" name="q" size="50" value="">
+<input type="submit" value=" 百科事典 検索 ">
+</div>
+</form>
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
 		<div id="content" class="mw-body" role="main">
 			<a id="top"></a>
 
+<!--
 			<?php
 			if ( $this->data['sitenotice'] ) {
 				?>
@@ -102,6 +119,7 @@ class VectorTemplate extends BaseTemplate {
 			<?php
 			}
 			?>
+-->
 			<h1 id="firstHeading" class="firstHeading" lang="<?php
 			$this->data['pageLanguage'] =
 				$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
@@ -174,6 +192,7 @@ class VectorTemplate extends BaseTemplate {
 				<?php $this->html( 'debughtml' ); ?>
 			</div>
 		</div>
+<!--
 		<div id="mw-navigation">
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 
@@ -251,7 +270,7 @@ class VectorTemplate extends BaseTemplate {
 			<div style="clear:both"></div>
 		</div>
 		<?php $this->printTrail(); ?>
-
+-->
 	</body>
 </html>
 	<?php
