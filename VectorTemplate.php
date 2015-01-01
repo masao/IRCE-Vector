@@ -164,9 +164,11 @@ class VectorTemplate extends BaseTemplate {
 				<?php
 				if ( $this->data['printfooter'] ) {
 					?>
+<!--
 					<div class="printfooter">
 						<?php $this->html( 'printfooter' ); ?>
 					</div>
+-->
 				<?php
 				}
 				?>
