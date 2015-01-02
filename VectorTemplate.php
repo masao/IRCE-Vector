@@ -94,14 +94,14 @@ class VectorTemplate extends BaseTemplate {
 "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja">
 <head>
-<link rel="stylesheet" href="../../ircepedia/style.css" type="text/css">
+<link rel="stylesheet" href="/ircepedia/style.css" type="text/css">
 <title>
 </title>
 </head>
 <body>
-<form action="../../ircepedia/" method="GET">
+<form action="/ircepedia/" method="GET">
 <div class="form">
-<span class="logo"><img src="../../ircepedia/logo-small.png" alt="百科事典サーチ" /></span>
+<span class="logo"><img src="/ircepedia/logo-small.png" alt="百科事典サーチ" /></span>
 <input type="text" name="q" size="50" value="">
 <input type="submit" value=" 百科事典 検索 ">
 </div>
