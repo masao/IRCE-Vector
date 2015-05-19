@@ -101,7 +101,7 @@ class VectorTemplate extends BaseTemplate {
 <body>
 <form action="/ircepedia/" method="GET">
 <div class="form">
-<span class="logo"><img src="/ircepedia/logo-small.png" alt="百科事典サーチ" /></span>
+<a href="/ircepedia/"><span class="logo"><img src="/ircepedia/logo-small.png" alt="百科事典サーチ" /></span></a>
 <input type="text" name="q" size="50" value="">
 <input type="submit" value=" 百科事典 検索 ">
 </div>
